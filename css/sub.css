@@ -1,9 +1,16 @@
+@font-face {
+  font-family: 'MyFont3';
+  src: url("../font/NeueHansKendrick-Regular.otf");
+}
+
+
 .header-line {
   border-bottom: 3px dotted #8b8a8a;
 }
 
 .animate-link {
   font-size: large;
+  font-family: MyFont3, sans-serif;
   padding-bottom: 2px;
   text-decoration: none; /* デフォルトの下線を非表示にする */
   color: #000000; /* 文字色 */
@@ -29,7 +36,7 @@
   height: calc(100vh - 55px);
 }
 
-#banner-container-2{
+.banner-container-2{
   min-height: 400px;
   line-height: 0;
   height: 50vh;
@@ -38,7 +45,14 @@
 #banner-container-3{
   min-height: 400px;
   line-height: 0;
-  height: 100vh;
+  height: auto;
+}
+
+#banner-container-4 {
+  min-height: 400px;
+  line-height: 0;
+  height: auto;
+  background-color: #b3d4fc;
 }
 
 .card-title-2 {

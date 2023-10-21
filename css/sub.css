@@ -34,6 +34,7 @@
   min-height: 400px;
   line-height: 0;
   height: calc(100vh - 55px);
+  background-color: #bbd77e;
 }
 
 .banner-container-2{
@@ -59,9 +60,18 @@
   text-decoration: none; /* デフォルトの下線を非表示にする */
   color: #000000; /* 文字色 */
 }
-
 .card-img-top {
   border-radius: var(--bs-card-inner-border-radius);
+}
+
+.img-on-txt-area:hover .card-img-top{
+  border-radius: var(--bs-card-inner-border-radius);
+  filter: blur(10px);
+}
+
+.img-on-txt-area:hover .img-on-txt{
+  animation:alpha 3s;
+  animation-fill-mode:forwards;
 }
 
 #row-card-1 {
@@ -80,4 +90,21 @@
   100% {
     opacity:1;
   }
+}
+
+
+.img-on-txt-area {/*親div*/
+  position: relative;/*相対配置*/
+}
+
+.img-on-txt{
+  position: absolute;/*絶対配置*/
+  color: white;/*文字は白に*/
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  opacity: 0;
 }

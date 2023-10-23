@@ -2,7 +2,9 @@
   "name": "portfoliosite",
   "version": "0.1.0",
   "description": "",
-  "keywords": ["site"],
+  "keywords": [
+    "site"
+  ],
   "license": "MIT",
   "author": "",
   "scripts": {
@@ -12,6 +14,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.6.0"
+  },
+  "staticFiles": {
+    "staticPath": ["./robots.txt", "./404.html", ".htaccess"]
   }
+
 }

@@ -18,7 +18,11 @@
     "parcel-plugin-static-files-copy": "^2.6.0"
   },
   "staticFiles": {
-    "staticPath": ["./robots.txt", "./404.html", ".htaccess"]
+    "staticPath": [
+      "./robots.txt",
+      "./404.html",
+      ".htaccess",
+      "site.webmanifest"
+    ]
   }
-
 }

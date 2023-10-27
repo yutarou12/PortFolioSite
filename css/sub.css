@@ -3,7 +3,6 @@
   src: url("../font/NeueHansKendrick-Regular.otf");
 }
 
-
 .header-line {
   border-bottom: 3px dotted #8b8a8a;
 }
@@ -107,4 +106,62 @@
   margin:0;
   padding:0;
   opacity: 0;
+}
+
+.profile-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-css-alpha-1 {
+  animation:progress-css-alpha-1 3s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes progress-css-alpha-1 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+.progress-css-alpha-2 {
+  animation:progress-css-alpha-2 3s;
+  animation-fill-mode:forwards;
+}
+@keyframes progress-css-alpha-2 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+.progress-css-alpha-3  {
+  animation:progress-css-alpha-3 3s;
+  animation-fill-mode:forwards;
+}
+@keyframes progress-css-alpha-3 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+.progress-css-alpha-4  {
+  animation:progress-css-alpha-4 3s;
+  animation-fill-mode:forwards;
+}
+@keyframes progress-css-alpha-4 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
